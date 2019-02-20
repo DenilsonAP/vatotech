@@ -1,0 +1,76 @@
+* {margin: 0; padding: 0; border: none; outline: none; font-weight: 300; box-sizing: border-box; font-family: 'Lato', sans-serif;}
+body {background: #212121;}
+a{text-decoration: none;}
+ul {list-style: none;}
+
+.cabecalho {width:100%; float:left; }
+.logo {width:140px; height: 80px; float:right; background:url() center center/140px no-repeat; font-size:0;}
+
+/* ------------------------------------ MENU  ------------------------------------*/
+.btn-menu {width: 60px; height: 60px; float: left; font-size:1em;  color: #fff; border-radius: 56px; cursor: pointer; 
+background: linear-gradient(to right, #30323d, #ff9400);}
+.btn-menu i {margin-top:0em;}
+.menu_mobile {display: none; width: 100%; height: 100%; position: fixed; background-color:rgba(0,0,0,0.9); top: 0; left: 0;}
+.btn-close {font-size:1.5em; color: #fff; float: right; margin-right: 5%; cursor: pointer;}
+.menu_mobile ul {width:100%; float: left; text-align: center; }
+.menu_mobile li a {font-size:2.5em; color:#fff; }
+.menu_mobile li a:hover {float:left; width: 100%;background: #fff; color:#000; }
+.menu_mobile li ul {display: none;}
+.menu {display: none;}
+.logar{display: none;}
+/* ------------------------------------ BANNER  ------------------------------------*/
+.banner{width: 100%; float: left; text-align: center; padding: 2% 4%;background:url(../img/banner3.jpeg) center/100em fixed}
+.title {width:100%; float:left;	margin: auto;}
+.title h2 {font-size:2.5em; color: #fff; font-weight: 700;}
+.title h3 {font-size:1.5em; color:#fff; font-weight: 500;}
+.buttons {width:100%; margin-top:2%;}
+.buttons i {float: right; margin-top:0em; font-size:1em;}
+.btn-cadastrar {width:100%; font-size: 1.5em; text-align:left; cursor: pointer; padding: 5%; border-radius: 10px;
+background-color:#fff; color:#130400;}
+.btn-sobre {width:100%; font-size: 1.5em; text-align:left; cursor: pointer; padding: 5%; border-radius: 10px;
+background-color:#130400; color:#fff; margin-top: 2%;}
+.btn-sobre:hover {font-weight: 700; background-color:rgba(000, 000, 000,0.7); -webkit-transition: 1s;}
+
+/* ------------------------------------ SERVIÇOS  ------------------------------------*/
+.box {width:100%;  height:80%; margin-top:3%; float: left;  padding:2% 4%; background-color:rgba(187, 187, 187,0.2);}
+.servico {width:100%; padding: 4%  4%; margin-top: 10%; background-color:#e1e3e0;  -moz-border-radius: 2%; -webkit-border-radius: 2%; border-radius: 2%;}
+.bolinha { margin:left;  margin-top:-3.5em;width:4em;height:4em; background:#942911;-moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%;}
+.preco { color:#fff; padding:0.9em; margin:auto; margin-top:-3em;width:6em;height:6em; background:#942911;-moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%;}
+i {font-size:2em; margin-top:0.5em;}
+.box h1 {font-weight: 700; text-align: center; font-size:1.5em; padding: 4%; }
+h3 {text-align: center; font-weight: 400; padding: 3%;}
+.bcomprar {width:100%; font-weight: 700; color:#fff; font-size:1em;margin-top: 3%; padding: 5%; background: #942911; -moz-border-radius: 4%; -webkit-border-radius: 4%; border-radius: 4%;}
+.bcomprar:hover {font-weight: 700; background-color:rgba(000, 000, 000,0.7); -webkit-transition: 1s;}
+.servico ul li { line-height: 45px; border-top: 1px solid rgba(187, 187, 187);}
+/* ------------------------------------ RODAPÉ  ------------------------------------*/
+.rodape {width:100%; height: 76px; margin-top:3%;float:left; background:url(../img/rodape.png)}
+.copyright {margin:1.7em 1.5em; float:left; color:rgba(255,255,255,0.9); font-weight: 600;}
+.img1 {width:48px;height:48px; margin-top:0.5em; margin-right:1em;float:right;background: url(../img/img1.png) no-repeat;}
+
+/* ------------------------------------ BREAKPOINTS  ------------------------------------*/
+@media screen and (min-width: 1200px) {
+.btn-menu {display:none;}
+.logo {display: none;}
+.btn-close {display: none;}
+.btn-sobre { display: none; }
+
+.cabecalho {width:100%; float:left; padding: 0;}
+.banner{width: 100%; float: left; text-align: center; padding: 25em 4%;background:url(../img/banner3.jpeg) center/100% fixed no-repeat;}
+.fundomenu {position:fixed;width:100%; float:left; padding:1%; text-align:center;}
+.menudiferente {background-color:rgba(187, 187, 187,0.5);}
+.menu{list-style:none; display:block; }
+.menu li{position:relative; float:left; }
+.menu li a{font-size:25px;color:#fafafa; text-decoration:none; padding:5px 25px; display:block;}
+.menu li a:hover{ -webkit-transition: 2s; background:#fcb02d; color:#fff; -moz-box-shadow:0 3px 10px 0 #ccc; -webkit-box-shadow:0 3px 10px 0 #ccc;text-shadow:0px 0px 5px #fff;}
+.menu li ul{color:#000; position:absolute; top:2.5em; background-color:rgba(187, 187, 187,0.5);display:none; text-align: left;}   
+.menu li:hover ul, .menu li.over ul{display:block;}
+.menu li ul li{border:1px solid #c0c0c0; display:block; width: 350px;}
+.menu li ul .teste {display: block;}
+
+.logar { display:block; color: #000; float: right; padding: 1% 2%; border: 1px solid #000; -moz-border-radius: 8px; -webkit-border-radius: 8px; border-radius: 8px; font-weight: bold;  text-shadow: 0 1px 0 #666; box-shadow: inset 0 1px 1px #fff, 0 2px 3px #666; cursor:pointer; position: relative;}
+.logar:hover {color:#fff; -webkit-transition: 2s; background-color: #fcb02d !important; background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffcc00)}
+
+
+
+
+}
